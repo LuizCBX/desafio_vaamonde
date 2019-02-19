@@ -3,11 +3,11 @@
 #!/bin/bash
 
 #1 
-DATA="A data de hoje é: $(date +&quot;%d/%m/%Y&quot;)"
+DATA="A data de hoje é: $(date +%F)"
 echo "$DATA"
 
 #2 
-HORA="Horário de Brasilia: $(date +&quot;%T&quot;)"
+HORA="Horário de Brasilia AM/PM: $(date +%r)"
 echo "$HORA"
 
 #3 
@@ -42,7 +42,6 @@ fi
 echo "Qual é a sua idade?"
 read idade
 if [$idade >= 18]
-then
   echo " Sua idade: $idade, Você é de maior, já pode comprar/consumir bebida alcoolica."
 else 
   echo " Sua idade: $idade, Você é de menor, está proibido de comprar/consumir bebida alcoolica."
