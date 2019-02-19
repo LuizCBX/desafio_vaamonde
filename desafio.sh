@@ -7,7 +7,7 @@ DATA="A data de hoje é: $(date +%F)"
 echo "$DATA"
 
 #2 
-HORA="Horário de Brasilia AM/PM: $(date +%r)"
+HORA="Horário de Brasilia formato AM/PM: $(date +%r)"
 echo "$HORA"
 
 #3 
@@ -41,9 +41,11 @@ fi
 #6 Desafio Lógico
 echo "Qual é a sua idade?"
 read idade
-if [$idade >= 18]
+if [ $idade >= 18 ];
+then
   echo " Sua idade: $idade, Você é de maior, já pode comprar/consumir bebida alcoolica."
 else 
+then
   echo " Sua idade: $idade, Você é de menor, está proibido de comprar/consumir bebida alcoolica."
 fi
 
