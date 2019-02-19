@@ -3,11 +3,11 @@
 #!/bin/bash
 
 #1 
-DATA="A data de hoje é: $(date +%F)"
+DATA="A data de hoje é: $(date +&quot;%d/%m/%Y&quot;)"
 echo "$DATA"
 
 #2 
-HORA="Horário de Brasilia: $(date +%r)"
+HORA="Horário de Brasilia: $(date +&quot;%T&quot;)"
 echo "$HORA"
 
 #3 
