@@ -41,7 +41,7 @@ fi
 #6 Desafio Lógico
 echo "Qual é a sua idade?"
 read idade
-if [ $idade >= 18 ];
+if [ $idade >=18 ];
 then
   echo " Sua idade: $idade, Você é de maior, já pode comprar/consumir bebida alcoolica."
 else 
