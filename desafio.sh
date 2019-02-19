@@ -45,7 +45,6 @@ if [ $idade >= 18 ];
 then
   echo " Sua idade: $idade, Você é de maior, já pode comprar/consumir bebida alcoolica."
 else 
-then
   echo " Sua idade: $idade, Você é de menor, está proibido de comprar/consumir bebida alcoolica."
 fi
 
